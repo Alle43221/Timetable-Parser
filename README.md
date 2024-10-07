@@ -72,7 +72,3 @@ This will create an `ics` file (e.g., `timetable.ics`), which you can then impor
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-This should provide clear guidance on what the project does and how users can modify it to work for their specific situation. Let me know if you'd like to tweak any part!
