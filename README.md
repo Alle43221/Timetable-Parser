@@ -43,7 +43,7 @@ file_name = "timetable"                                               # Name of 
 #### Explanation of Fields:
 - **`url`**: The URL of your university timetable in HTML format. You can find this on the UBB website for your specific course/year.
 - **`start_of_semester`**: The exact start date of your semester (e.g., the first day of classes).
-- **`end_of_semester`**: The last day of your semester, including exams if necessary.
+- **`end_of_semester`**: The last day of your semester.
 - **`timezone_adjustment`**: The difference in hours between your local time and UTC (e.g., `-3` for UTC+3).
 - **`file_name`**: The desired name of the output `.ics` file.
 
