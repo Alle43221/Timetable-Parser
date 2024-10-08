@@ -31,11 +31,13 @@ Before running the script, you need to edit the following variables in the **`ti
 ```python
 #------------------------USER EDIT ZONE---------------------------
 
-url = "https://www.cs.ubbcluj.ro/files/orar/2024-1/tabelar/I2.html"  # URL of your timetable (HTML)
+url = "https://www.cs.ubbcluj.ro/files/orar/2024-1/tabelar/I2.html"   # URL of your timetable (HTML)
 start_of_semester = datetime.datetime(year=2024, month=9, day=30)     # Start date of your semester
 end_of_semester = datetime.datetime(year=2025, month=1, day=19)       # End date of your semester
 timezone_adjustment = -3                                              # Timezone offset (e.g., -3 for UTC+3)
 file_name = "timetable"                                               # Name of the output .ics file
+group="224"                                                           # Group number for filtering relevant classes
+semi_group= "2"                                                       # Semi-group number for finer filtering of the timetable
 
 #------------------------USER EDIT ZONE---------------------------
 ```
