@@ -9,10 +9,12 @@ start_of_semester = datetime.datetime(year=2024, month=9, day=30)
 end_of_semester = datetime.datetime(year=2025, month=1, day=19)
 timezone_adjustment=-3
 file_name="timetable"
+group="224"
+semi_group= "2"
 
 #------------------------USER EDIT ZONE---------------------------
 
-def process_activity(activity, half_group, group, c):
+def process_activity(activity, c):
     register = False
     start_index = activity.find("<td>") + len("<td>")
     end_index = activity.find("</td>")
@@ -46,7 +48,7 @@ def process_activity(activity, half_group, group, c):
     #print(formatie)
     if formatie.find(group + "/")==-1: #an intreg
         register = True
-    elif formatie == (group + "/" + half_group):
+    elif formatie == (group + "/" + semi_group):
         register = True
     #print(formatie)
 
@@ -117,11 +119,6 @@ def scrape():
     html_bytes = page.read()
     html = html_bytes.decode("utf-8")
 
-    print("Introdu grupa:")
-    group = input(">>>")
-
-    print("Introdu semigrupa:")
-    half_group = input(">>>")
     start_index = html.find(group)
     copy=html[start_index:]
     diff=len(html)-len(copy)
@@ -150,7 +147,7 @@ def scrape():
 
         activity = table[:end_index]
         table = table[end_index:]
-        process_activity(activity, half_group, group, c)
+        process_activity(activity, c)
         end_index = table.find("</tr>") + len("</tr>")
 
 
