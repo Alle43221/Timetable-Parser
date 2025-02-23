@@ -17,9 +17,9 @@ This Python-based project allows students at **Universitatea Babeș-Bolyai (UBB)
     ```
 
 2. **Install dependencies**:
-    You may need some Python packages such as `ics`, `requests`, `beautifulsoup4`, etc. Install them using:
+    You may need a Python package such as `ics`. Install it using:
     ```bash
-    pip install -r requirements.txt
+    pip install ics
     ```
 
 ## How to Use
@@ -54,7 +54,7 @@ semi_group= "2"                                                       # Semi-gro
 After setting the correct fields, run the script, and it will download your timetable, parse it, and generate an `.ics` file in the project directory.
 
 ```bash
-python timetable_parser.py
+python main.py
 ```
 
 This will create an `ics` file (e.g., `timetable.ics`), which you can then import into Google Calendar or any other calendar application.
