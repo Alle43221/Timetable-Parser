@@ -12,8 +12,8 @@ This Python-based project allows students at **Universitatea Babeș-Bolyai (UBB)
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/UBB-timetable-parser.git
-    cd UBB-timetable-parser
+    git clone https://github.com/Alle43221/Timetable-Parser.git
+    cd Timetable-Parser
     ```
 
 2. **Install dependencies**:
